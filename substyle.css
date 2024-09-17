@@ -9,18 +9,18 @@
 
 @font-face {
     font-family: 'Garamond';
-    src: url('./fonts/garamondroughpro-regular.ttf');
+    src: url(./fonts/garamondroughpro-regular.ttf);
 }
 
 @font-face {
     font-family: 'Garamond';
-    src: url('./fonts/garamondroughpro-bold.ttf');
+    src: url(./fonts/garamondroughpro-bold.ttf);
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Garamond';
-    src: url('./fonts/garamondroughpro-regularita.ttf');
+    src: url(./fonts/garamondroughpro-regularita.ttf);
     font-style: italic;
 }
 
@@ -119,16 +119,35 @@ h2 {
     font-size: 28pt;
 }
 
-#international, #local {
+.main-wrapper {
     max-width: 1400px;
     margin: 2em auto;
     scroll-margin-top: 6em;
 }
 
-.muns-grid {
+.main-grid {
     display: grid;
     grid-template-columns: auto;
     gap: 2rem;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+.award-card {
+    background-color: var(--item-color);
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
 }
 
 .mun-card {
@@ -139,15 +158,48 @@ h2 {
     transition: transform 0.3s ease;
 }
 
-.mun-card:hover {
-    transform: scale(1.02);
+.chem-card {
+    background-color: var(--item-color);
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
 }
 
-.mun-card h3 {
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    font-size: 18pt;
+.music-card {
+    background-color: var(--item-color);
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.tech-card {
+    background-color: var(--item-color);
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.fill {
+    background: white;
+}
+
+.leadership-card {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--item-color);
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.leadership-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .organization {
@@ -165,14 +217,20 @@ h2 {
 .certificate {
     display: inline-block;
     margin-top: 1rem;
+    margin-right: 1em;
     padding: 0.5rem 1rem;
     background-color: var(--primary-color);
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    width: 12%;
-    align-self: center;
+    width: fit-content;
     text-align: center;
+}
+
+.icon-image {
+    max-height: 400px;
+    margin-left: 100px;
+    border-radius: 20%;
 }
 
 .certificate:hover {
@@ -192,4 +250,14 @@ footer {
     background-color: var(--secondary-color);
     color: var(--text-color);
     z-index: 100000;
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.collage {
+    max-width: 100%;
+    padding-top: 4.3rem;
 }
