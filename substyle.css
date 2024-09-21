@@ -230,3 +230,20 @@ footer {
     height: inherit;
     padding-top: 4.3rem;
 }
+
+.error-container {
+    text-align: center;
+    padding: 16rem 0;
+}
+
+.error-container h1 {
+    font-size: 6rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.error-container p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
