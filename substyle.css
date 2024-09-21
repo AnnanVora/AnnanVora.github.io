@@ -131,6 +131,14 @@ h2 {
     gap: 2rem;
 }
 
+.card {
+    background-color: var(--item-color);
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
 .card:hover {
     transform: scale(1.02);
 }
@@ -140,46 +148,6 @@ h2 {
     margin-bottom: 0.5rem;
     font-weight: bold;
     font-size: 18pt;
-}
-
-.award-card {
-    background-color: var(--item-color);
-    border-radius: 8px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    padding: 1.5rem;
-    transition: transform 0.3s ease;
-}
-
-.mun-card {
-    background-color: var(--item-color);
-    border-radius: 8px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    padding: 1.5rem;
-    transition: transform 0.3s ease;
-}
-
-.chem-card {
-    background-color: var(--item-color);
-    border-radius: 8px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    padding: 1.5rem;
-    transition: transform 0.3s ease;
-}
-
-.music-card {
-    background-color: var(--item-color);
-    border-radius: 8px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    padding: 1.5rem;
-    transition: transform 0.3s ease;
-}
-
-.tech-card {
-    background-color: var(--item-color);
-    border-radius: 8px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    padding: 1.5rem;
-    transition: transform 0.3s ease;
 }
 
 .fill {
@@ -259,5 +227,6 @@ footer {
 
 .collage {
     max-width: 100%;
+    height: inherit;
     padding-top: 4.3rem;
 }
