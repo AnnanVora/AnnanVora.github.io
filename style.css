@@ -97,6 +97,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: auto;
+    align-items: flex-start;
 }
 
 .hero-bio h1 {
@@ -132,6 +133,22 @@ h1 {
     margin-bottom: 3rem;
     font-size: 4rem;
     color: var(--primary-color);
+}
+
+.resume {
+    margin-top: 8rem;
+    margin-right: 1em;
+    padding: 0.8rem 1.6rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: fit-content;
+    font-size: 1.7rem;
+}
+
+.resume:hover {
+    background-color: var(--logo-color);
 }
 
 .grid-container {
